@@ -1,7 +1,7 @@
 # use strict;
 # use warnings;
 # use diagnostics;
-# use feature 'say';
+use feature 'say';
 # use feature "switch";
 
 print "Hello from perlTut_1\n";
@@ -21,3 +21,29 @@ my $second = 2;
 
 ($first, $second) = ($second, $first);
 print qq{first: $first, second: $second \n};
+
+say "Saying LOOPs using say!";
+say "For";
+for (my $i=1; $i<=5; $i++){
+    say $i;
+}
+
+say "While";
+my $i = 5;
+while($i > 0){
+    say $i;
+    $i--;
+}
+
+# print "My last name is: ";
+# $last_name = <STDIN>;
+# my $rane = "rane";
+
+# if($last_name eq $rane){
+#     say "Correct!!!";
+# }
+
+@alpha_array = ('a' .. 'z');
+
+print join (", ", @alpha_array), "\n";
+say @alpha_array;
